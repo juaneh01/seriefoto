@@ -1,0 +1,362 @@
+/*Mobile First*/
+@media screen and (max-width: 599px){
+	body{
+		margin: 0;
+		padding: 0;
+		top: 0;
+		left: 0;
+		font-family: 'Poiret One', cursive;
+		font-size: 1em;
+		overflow-x: hidden;
+	}
+	.header{
+		width: 95%;
+		margin: 0;
+		padding: 0% 2.5%;
+		background-color: #e7e7e7;
+		border: 1px solid #f8f8f8; /* Color del borde, debe ser más claro que fondo */
+		color: #222;  /* Color del texto */
+		border-radius: 0px 0px 6px 6px;  /* Bordes redondos */
+		box-shadow:inset 2px 2px 4px rgba(120, 120, 120, .4), inset -3px -3px 3px rgba(255,255,255,.4);
+		text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
+		text-align: center;  /* Alineación del texto */
+	}
+	.logo-pc{
+		display: none;
+	}
+	.logo-ch{
+		font-size: 2em;
+		width: 100%;
+		background-color: #e7e7e7;
+		position: fixed;
+		left: 0;
+		top: 0;
+		padding: 5px 0px;
+	}
+	.logo-ch::after{
+		content: '|';
+		color: red;
+	}
+	.menu-container{
+		padding: 1% 0%;
+		margin-top: 3em;
+	}
+	.menu{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	.menu-item{
+		padding: 1px;
+	}
+	.menu-link{
+		text-decoration: none;
+		color: #222;
+	}
+	.index{
+		background: url('Fondo.jpg');
+		width: 90%;
+		padding: 5%;
+		min-height: 50vh;
+		background-size: cover;
+	}
+	.main-title, .main-subtitle, .frase{
+		background-color: rgba(255, 214, 0, 0.4);
+	}
+	.about , .footer{
+		width: 90%;
+		padding: 5%;
+		text-align: center;
+		background-color: #e7e7e7;
+	}
+	.gallery{
+		text-align: center;
+	}
+	.gallery img{
+		max-width: 100%;
+	}
+	.modal{
+		display: none;
+	}
+	.galeria{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.footer{
+	clear: both;
+	text-align: center;
+	}
+	.contact-list{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.contact-list-item{
+		display: inline-block;
+		text-decoration: none;
+		list-style-type: none;
+		margin: 0 0 0 0;
+	}
+	.fb-logo, .insta-logo, .you-logo{
+		text-decoration: none;
+		color: #222;
+		padding: 20px 25px;
+		border-radius: 50%;
+		background-color: #e7e7e7;
+		transition: 1s;
+	}
+	.fb-logo:hover{
+		background-color: blue;
+		color: #e7e7e7;
+	}
+	.insta-logo:hover{
+		background-color: #a04;
+		color: #e7e7e7;
+	}
+	.you-logo:hover{
+		background-color: red;
+		color: #e7e7e7;
+	}
+
+}/* TERMINA VERSION MOVIL */	
+
+
+/*PC, TABLET*/
+
+@media screen and (min-width: 600px) {
+  
+body{
+	margin: 0;
+	padding: 0;
+	color: #222;
+	background-color: #f7f7f7;
+	top: 0;
+	left: 0;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.2em;
+}
+
+/* HEADER Y MENU */
+.header{
+	width: 90%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	padding: 0% 5% 0% 5%;
+	background-color: #222;
+	color: #f7f7f7;
+	position: fixed;
+}
+.logo-ch{ visibility: hidden; }
+.logo-pc{
+	font-size: 2.3em;
+}
+.logo-pc::after{
+	content: "|";
+	color: red;
+}
+.menu-container{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+.menu-item{
+	display: inline-block;
+}
+.menu-link{
+	color: #f7f7f7;
+	text-decoration: none;
+	padding: 10px;
+	transition: 1s;
+}
+.menu-link:hover{
+	background-color: #f7f7f7;
+	color: #222;
+
+}
+
+/* MAIN */
+.main{
+	margin: 0;
+	padding: 0;
+	z-index: -99999;
+}
+.main-title{
+	background-color: rgba(255, 214, 0, 0.4);
+	max-width: 40vw;
+}
+.main-subtitle{
+	background-color: rgba(255, 214, 0, 0.4);
+	max-width: 30vw;
+}
+
+/* INICIO */
+.index{
+	width: 80%;
+	height: 50vh;
+	padding: 10%;
+	margin-top: 50px;
+	text-align: left;
+	background: url('Fondo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed
+}
+.index h1::after, .index h2::after{
+	content: "|";
+	color: red;
+}
+.frase{
+	background-color: rgba(255, 214, 0, 0.5);
+	max-width: 10vw;
+}
+
+/* ACERCA DE LA GALERIA */
+.about{
+	width: 90%;
+	padding: 5%;
+	background-color: #cecece;
+	text-align: center;
+}
+.normal-parraf{
+	padding: 0% 5%;
+}
+
+/* GALERIA */
+
+
+
+/*Estilos de la galeria*/
+
+.galeria {
+	width: 80%;
+	margin: auto;
+	list-style: none;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery{
+	text-align: center;
+	padding: 5% 0%;
+}
+
+.galeria img {
+	width: 250px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+	display: none;
+}
+
+.modal:target {
+	
+	display: block;
+	position: fixed;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal h3 {
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.imagen {
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen a {
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+
+.imagen img {
+	height: 100%;
+	max-width: 100%;
+	max-height: 70vh;
+	border: 7px solid #fff;
+	box-sizing: border-box;
+}
+
+.cerrar {
+	display: block;
+	background: #fff;
+	width: 25px;
+	height: 25px;
+	margin: 15px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: #000;
+	padding: 5px;
+	border-radius: 50%;
+	line-height: 25px;
+}
+
+/* FOOTER */
+
+.footer{
+	clear: both;
+	background-color: #222;
+	color: #e7e7e7;
+	width: 90%;
+	padding: 5%;
+	text-align: center;
+}
+.contact-list{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.contact-list-item{
+	display: inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	margin: 0 0 0 0;
+}
+.fb-logo, .insta-logo, .you-logo{
+	text-decoration: none;
+	color: #222;
+	padding: 20px 25px;
+	border-radius: 50%;
+	background-color: #e7e7e7;
+	transition: 1s;
+}
+.fb-logo:hover{
+	background-color: blue;
+	color: #e7e7e7;
+}
+.insta-logo:hover{
+	background-color: #a04;
+	color: #e7e7e7;
+}
+.you-logo:hover{
+	background-color: red;
+	color: #e7e7e7;
+}
+}
